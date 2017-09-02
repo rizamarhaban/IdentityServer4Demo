@@ -1,0 +1,46 @@
+﻿@using Microsoft.AspNetCore.Authentication;
+
+@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<div class="container">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <h1>Logged in as: @User.Identity.Name</h1>
+    }
+    else
+    {
+        <h1>Not Logged In</h1>
+    }
+
+    @{
+        var it = await Context.Authentication.HttpContext.GetTokenAsync("id_token");
+        var at = await Context.Authentication.HttpContext.GetTokenAsync("access_token");
+        var rt = await Context.Authentication.HttpContext.GetTokenAsync("refresh_token");
+    }
+</div>
+
+<div class="container">
+    <dl>
+
+        @if (at != null)
+            {
+            <dt>access_token</dt>
+            <dd>@at</dd>
+        }
+        @if (rt != null)
+            {
+            <dt>refresh_token</dt>
+            <dd>@rt</dd>
+        }
+        @foreach (var claim in @ViewBag.Claims)
+            {
+            <dt>@claim.Type</dt>
+            <dd>@claim.Value</dd>
+        }
+    </dl>
+</div>
+
