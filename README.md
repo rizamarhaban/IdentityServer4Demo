@@ -1,5 +1,5 @@
 # IdentityServer4Demo
-.NET Developers Community Meetup Demo on August 30, 2017
+[.NET Developers Community Meetup Demo](https://www.meetup.com/NET-Developers-SG/events/242852152/) on August 30, 2017
 
 In this demo, I use [IdentityServer4 2.0.0-preview3](https://www.nuget.org/packages/IdentityServer4/2.0.0-preview3). You can use the latest preview or if already have the RTM version.
 
