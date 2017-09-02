@@ -60,7 +60,7 @@ services.AddIdentityServer()
 
 How to wire up between the MVC and the API just follow the OpenId connect conecpt. The  grant type for the Web API is cleitn credentials, you can test in Postman like this:
 
-[TBD]
+![Postman Example](https://www.rizamarhaban.com/wp-content/uploads/2017/09/Ids4Demo_Client_Credetials.png "Client Credentials Example")
 
 In my case, I use hybrid for the MVC and client credentials for the Web API. You can also change the gran type of the Web API to use resoruce owner if you want to use password as the credentials for login. See the client configuration in the ```Config.cs``` file on the IdentityServer project and just change the **AllowedGrantType** to:
 
@@ -70,5 +70,5 @@ AllowedGrantTypes = GrantTypes.ResourceOwnerPassword
 
 To Test using Postman, you can specify the ```grant_type``` parameter value as ```password```, example:
 
-[TBD]
+![Postman Example](https://www.rizamarhaban.com/wp-content/uploads/2017/09/Ids4Demo_ResourceOwnerPassword.png "Resource Owner Password Example")
 
