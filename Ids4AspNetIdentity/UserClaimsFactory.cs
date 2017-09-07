@@ -34,7 +34,7 @@ namespace IdentityServer4.AspNetIdentity
                 identity.AddClaim(new Claim(JwtClaimTypes.PreferredUserName, username));
             }
 
-            if (!identity.HasClaim(x=>x.Type == JwtClaimTypes.Name))
+            if (!identity.HasClaim(x => x.Type == JwtClaimTypes.Name))
             {
                 identity.AddClaim(new Claim(JwtClaimTypes.Name, username));
             }
