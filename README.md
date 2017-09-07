@@ -1,12 +1,12 @@
 # IdentityServer4Demo
 [.NET Developers Community Meetup Demo](https://www.meetup.com/NET-Developers-SG/events/242852152/) on August 30, 2017
 
-In this demo, I use [IdentityServer4 2.0.0-preview3](https://www.nuget.org/packages/IdentityServer4/2.0.0-preview3). You can use the latest preview or if already have the RTM version.
+In this demo, I use [IdentityServer4 2.0.0-rc1](https://www.nuget.org/packages/IdentityServer4/2.0.0-rc1). You can use the latest preview or if already have the RTM version.
 
 There are 4 (four) projects in the solution folder, that is:
 
 + IdentityServer (The ASP.NET Core 2.0 MVC AspNetIdentity using IdentityServer4)
-+ Ids4AspNetIdentity project using .NET Standard 2.0 (taken from [IdentityServer4.AspNetIdentity](https://github.com/IdentityServer/IdentityServer4.AspNetIdentity))
++ Ids4AspNetIdentity project using .NET Standard 2.0 (taken from [IdentityServer4.AspNetIdentity 2.0.0-rc1](https://github.com/IdentityServer/IdentityServer4.AspNetIdentity))
 + MyApi (The ASP.NET Core 2.0 Web Api project)
 + MyWeb (The ASP.NET Core 2.0 MVC project)
 
